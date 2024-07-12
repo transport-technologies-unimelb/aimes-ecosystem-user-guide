@@ -49,3 +49,14 @@ extra:
   #     link: "https://github.com/peaceiris"
   #   - icon: "fontawesome/brands/twitter"
   #     link: "https://twitter.com/piris314en"
+
+
+nav:
+  - Home: index.md
+  - Getting started:
+    - Introduction: getting-started/introduction.md
+    - Requesting access: getting-started/requesting-access.md
+    - Using the platform: getting-started/using-the-platform.md
+  - Concepts:
+    - Regions: concepts/regions.md
+    - Links and Intersections: concepts/links-and-intersections.md
