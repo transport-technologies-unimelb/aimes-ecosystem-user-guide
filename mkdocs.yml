@@ -1,40 +1,24 @@
-# Project information
-site_name: "AIMES Ecosystem User Guide"
+site_name: AIMES Ecosystem User Guide
 site_description: "This is a user guide to use the AIMES Ecosystem web application."
 site_author: "Transport Technologies - University of Melbourne"
-site_url: "https://mkdocs.peaceiris.com/"
-
-# Copyright
 copyright: "&copy; 2023 University of Melbourne"
-
-# Repository
-# repo_name: "GitHub"
-# repo_url: "https://github.com/peaceiris/mkdocs-material-boilerplate"
-# edit_uri: "https://github.com/peaceiris/mkdocs-material-boilerplate/edit/main/docs_sample"
-
-# Configuration
-docs_dir: "docs"
 theme:
-  name: "material"
+  name: material
   language: "en"
+  favicon: images/icon.png
+  logo: images/icon.png
   shortcuts:
     help: 191 # ?
     next: 78 # n
     previous: 80 # p
     search: 83 # s
   palette:
-    primary: "blue"
-    accent: "blue"
+    scheme: slate
+    primary: custom
   features:
     - tabs
-  #font:
-  #text: 'Ubuntu'
-  #code: 'Ubuntu Mono'
-  #icon:
-  #logo: 'images/logo.svg'
-  #favicon: 'assets/images/favicon.ico'
+    - navigation.tabs
 
-# Extensions
 markdown_extensions:
   - admonition
   - codehilite
@@ -44,6 +28,7 @@ markdown_extensions:
   - toc:
       permalink: true
       separator: "_"
+      title: "On this page"
 
 plugins:
   - search:
@@ -55,9 +40,10 @@ plugins:
 extra_javascript:
   - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
 extra_css:
-  - "assets/css/custom.css"
+  - "stylesheets/extra.css"
 extra:
   manifest: "manifest.json"
+  generator: false
   # social:
   #   - icon: "fontawesome/brands/github-alt"
   #     link: "https://github.com/peaceiris"
