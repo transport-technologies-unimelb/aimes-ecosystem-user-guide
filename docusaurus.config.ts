@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "AIMES Ecosystem",
   // tagline: 'Dinosaurs are cool',
-  favicon: "img/favicon.ico",
+  favicon: "img/icon.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
@@ -77,8 +77,8 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
+          href: "https://aimes-ecosystem.unimelb-transport-technologies.cloud.edu.au/app",
+          label: "Dashboard",
           position: "right",
         },
       ],
@@ -126,7 +126,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © 2023-${new Date().getFullYear()} University of Melbourne`,
     },
     prism: {
       theme: prismThemes.github,
