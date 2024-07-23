@@ -11,6 +11,20 @@ Use your mouse to drag and adjust the zoom of the map.
 
 Depending on your bounds selection, the map will display elements within your selection. For example, if you draw a polygon, only Links and Intersections within that polygon will be shown.
 
+### Flying to a particular location
+
+You can use the Address Search tool to jump to a particular location on the map.
+
+1. Click on the magnifying glass icon on the right of the screen. A popup will appear.
+2. Select the type of search. The options are:
+    - Address: a free-text address search
+    - Road: an exact Link ID
+    - Intersection: an exact Intersection ID
+3. Enter the search query on the text field, and press Enter.
+4. A list of options will appear below the text field. Click on one of the options, and the map will fly to that location.
+
+![](/img/getting-started/search.png)
+
 
 ## Link or Intersection details
 You can click on a Link or Intersection to view the details of that particular Link/Intersection.
