@@ -69,8 +69,8 @@ const config: Config = {
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://aimes-ecosystem.unimelb-transport-technologies.cloud.edu.au/app",
-          label: "Dashboard",
+          to: "https://aimes-ecosystem.unimelb-transport-technologies.cloud.edu.au/app",
+          label: "Open Dashboard",
           position: "right",
         },
       ],
