@@ -4,10 +4,7 @@ sidebar_position: 2
 
 # Traffic Congestion
 
-
-:::info
-Traffic Congestion data is currently available only in Melbourne region.
-:::
+> **Region availability:** Melbourne
 
 This layer visualises the congestion index of each Link on the map.
 You can choose to view the actual congestion index (at the selected time), or any volume predictions up to 3 hours ahead.

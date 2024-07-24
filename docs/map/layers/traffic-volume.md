@@ -4,9 +4,7 @@ sidebar_position: 1
 
 # Traffic Volume
 
-:::info
-Traffic Volume data is currently available only in Melbourne region.
-:::
+> **Region availability:** Melbourne
 
 This layer visualises the volume of each Link on the map.
 You can choose to view the actual volume (at the selected time), or any volume predictions up to 3 hours ahead.
