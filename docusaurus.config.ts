@@ -36,9 +36,6 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
         },
-        blog: {
-          showReadingTime: true,
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -67,7 +64,6 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
         {
           to: "https://aimes-ecosystem.unimelb-transport-technologies.cloud.edu.au/app",
           label: "Open Dashboard",
