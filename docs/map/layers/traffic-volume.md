@@ -38,3 +38,24 @@ The left image shows the map without this option enabled, while the right image 
 ![](/img/map/layers/vol-width.png)
 
 ### Configure binning
+
+The layer comes with a default binning partition of 200, 600, and 1000 vehicles/hour.
+
+You can change this default binning by using the "Configure binning" tool.
+When you click on the button, a text field will appear.
+
+![](/img/map/layers/binning.png)
+
+Enter a comma-separated string representing the binning boundaries.
+For example, if you want to group the values into these bins:
+- 0 - 100
+- 100 - 200
+- 200 - 300
+- above 300
+
+Then you should enter this binning boundaries:
+```
+100, 200, 300
+```
+
+Note that 0 is not included in the string.
