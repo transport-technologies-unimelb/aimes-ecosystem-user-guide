@@ -48,9 +48,9 @@ When you click on the button, a text field will appear.
 
 Enter a comma-separated string representing the binning boundaries.
 For example, if you want to group the values into these bins:
-- 0 - 100
-- 100 - 200
-- 200 - 300
+- 0 - 99
+- 100 - 199
+- 200 - 299
 - above 300
 
 Then you should enter this binning boundaries:
