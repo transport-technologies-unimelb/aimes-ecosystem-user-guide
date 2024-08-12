@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Traffic Volume
 
-> **Region availability:** Melbourne
+> **Region availability:** Melbourne, Metropolitan Melbourne
 
 This layer visualises the volume of each Link on the map.
 You can choose to view the actual volume (at the selected time), or any volume predictions up to 3 hours ahead.

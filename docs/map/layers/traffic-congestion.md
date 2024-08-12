@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Traffic Congestion
 
-> **Region availability:** Melbourne
+> **Region availability:** Melbourne, Metropolitan Melbourne
 
 This layer visualises the congestion index of each Link on the map.
 You can choose to view the actual congestion index (at the selected time), or any volume predictions up to 3 hours ahead.
