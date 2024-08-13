@@ -67,11 +67,12 @@ sidebar_position: 7
 
 ### Hazard
 
-> Hazard is measured in percentage (%). TODO definition.
+> Hazard score estimates the probability of an accident happening on a particular Link in the long run (i.e., about 7 years).
+> It is measured in percentage (%).
 
 ### Congestion
 
-> Congestion is measured in percentage (%), where 0 indicates no traffic, and 100% indicates that the road is at full capacity.
+> Congestion score is measured in percentage (%), where 0 indicates no traffic, and 100% indicates that the road is at full capacity.
 > It is calculated using this formula:
 >
 > $$
