@@ -8,7 +8,7 @@ sidebar_position: 7
 
 > A Road Network Region (also referred to as Region) is an interconnected collection of Links, Intersections, and other entities such as emission detector and public transport routes.
 >
-> One Region is isolated from another, i.e. there is no entity that are connected between two Regions.
+> One Region is isolated from another, i.e. there are no entities connected between two Regions.
 
 ### Link/Road
 
