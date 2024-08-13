@@ -134,7 +134,8 @@ sidebar_position: 7
 
 ### Cycle time
 
-> Cycle time represents the total time for an intersection to complete one cycle, i.e. time from the start of phase until it goes back to the same phase.
+> We define cycle time as the average duration of all phases within a 15-minute time period.
+> It is an approximation of the actual cycle time based on real-time signal data, but it is usually shorter than the actual cycle time.
 > Because SCATS can adapt the timing on each phase on the fly, cycle time can change over time.
 >
 > Cycle time is measured in seconds.
