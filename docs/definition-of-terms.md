@@ -76,10 +76,10 @@ sidebar_position: 7
 > It is calculated using this formula:
 >
 > $$
-> Congestion = HourlyVolume \times \frac{Capacity}{Lanes}
+> Congestion = \frac{HourlyVolume}{Lanes \times CapacityPerLane} \times 100
 > $$
 >
-> where $HourlyVolume$ is the [hourly volume](#hourly-volume) of the Link, $Capacity$ is the maximum number of vehicles per hour per lane, and $Lanes$ is the number of lanes.
+> where $HourlyVolume$ is the [hourly volume](#hourly-volume) of the Link, $CapacityPerLane$ is the maximum number of vehicles per hour per lane, and $Lanes$ is the number of lanes.
 
 ### Emission
 
