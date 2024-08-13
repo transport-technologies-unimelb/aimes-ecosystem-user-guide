@@ -67,7 +67,7 @@ sidebar_position: 7
 
 ### Hazard
 
-> TODO
+> Hazard is measured in percentage (%). TODO definition.
 
 ### Congestion
 
@@ -103,29 +103,42 @@ sidebar_position: 7
 >
 > Second, we take the longest pairwise path distance, and get the [speed](#speed) of each Link in the path.
 > If the speed data is missing, we use the speed limit instead.
-> 
+>
 > Finally, we compute the travel time using this equation:
+>
 > $$
 > AvgTravelTime = \sum^n_{i=0}{\frac{Length_i \mathbin{/} 1000}{Speed_i \times 60}}
 > $$
+>
 > where $n$ is the number of Links in the shortest path, $Length_i$ denotes the length of $i$-th Link (in metres), and $Speed_i$ denotes the average speed of the $i$-th Link (in km/h).
 
 ### Expected travel time
 
 > Expected travel time has similar formula as [Average Travel Time](#average-travel-time), but instead of using actual speed data we use the speed limit.
 > The idea is that people tend to travel near the speed limit, and this metric will represent the expected travel time if there is no traffic congestion.
+>
 > $$
 > ExpectedTravelTime = \sum^n_{i=0}{\frac{Length_i \mathbin{/} 1000}{SpeedLimit_i \times 60}}
 > $$
+>
 > where $n$ is the number of Links in the shortest path, $Length_i$ denotes the length of $i$-th Link (in metres), and $SpeedLimit_i$ denotes the speed limit of the $i$-th Link (in km/h).
 
 ### Average delay
 
 > Average delay is the difference between [Average Travel Time](#average-travel-time) and [Expected Travel Time](#expected-travel-time):
+>
 > $$
 > AvgDelay = AvgTravelTime - ExpectedTravelTime
 > $$
 
 ### Cycle time
 
+> Cycle time represents the total time for an intersection to complete one cycle, i.e. time from the start of phase until it goes back to the same phase.
+> Because SCATS can adapt the timing on each phase on the fly, cycle time can change over time.
+>
+> Cycle time is measured in seconds.
+
 ### Estimated queue length
+
+> Estimated queue length is measured in metres.
+> Queue length is measured from the intersection until the last vehicle that is queueing at the intersection at a particular time.
