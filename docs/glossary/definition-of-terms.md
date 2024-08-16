@@ -104,7 +104,7 @@ More on Volume on this page: [Traffic Volume](volume)
 > Finally, we compute the travel time using this equation:
 >
 > $$
-> AvgTravelTime = \sum^n_{i=0}{\frac{Length_i \mathbin{/} 1000}{Speed_i \times 60}}
+> AvgTravelTime = \sum^n_{i=0}{\frac{Length_i \mathbin{/} 1000}{Speed_i} \times 60}
 > $$
 >
 > where $n$ is the number of Links in the shortest path, $Length_i$ denotes the length of $i$-th Link (in metres), and $Speed_i$ denotes the average speed of the $i$-th Link (in km/h).
@@ -115,7 +115,7 @@ More on Volume on this page: [Traffic Volume](volume)
 > The idea is that people tend to travel near the speed limit, and this metric will represent the expected travel time if there is no traffic congestion.
 >
 > $$
-> ExpectedTravelTime = \sum^n_{i=0}{\frac{Length_i \mathbin{/} 1000}{SpeedLimit_i \times 60}}
+> ExpectedTravelTime = \sum^n_{i=0}{\frac{Length_i \mathbin{/} 1000}{SpeedLimit_i} \times 60}
 > $$
 >
 > where $n$ is the number of Links in the shortest path, $Length_i$ denotes the length of $i$-th Link (in metres), and $SpeedLimit_i$ denotes the speed limit of the $i$-th Link (in km/h).
