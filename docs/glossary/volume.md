@@ -101,3 +101,20 @@ $$$
 where:
 - $D_i$ is the number of detectors attached to Link $i$
 - $L_d$ is the total number of lanes of all Links attached to detector $d$, formally: $L_d = \sum^{N_d}_{k=0}{NumLanes_k}$ where $N_d$ is the number of Links attached to detector $d$.
+
+#### Limitation
+
+We only have the association between detectors and Links, not individual lanes.
+Therefore, occasionally the weighted averaging may not accurately represent the actual volume.
+
+Consider the above example, where we have this setup:
+- Detector 1 - connected to Link 1 (2 lanes).
+- Detector 2 - connected to Link 1 (2 lanes) and Link 2 (1 lane).
+
+The count of Detector 1 will be fully assigned to Link 1 - there's no problem there.
+
+The count of Detector 2 will be distributed among the two Links.
+Looking at the detector layout, the detector count should be equally distributed to Links 1 and 2, because the Detector 2 counts one lane in Link 1 and one lane in Link 2.
+
+However, because Link 1 has two lanes and Link 2 only has one, Link 1 will have 2/3 of the detector count.
+As a result, Link 1 will have more volume than it should, and Link 2 will have less.
