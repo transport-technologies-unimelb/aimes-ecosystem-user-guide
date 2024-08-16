@@ -79,3 +79,25 @@ LinkVolume_i = \frac{1}{L}\times NumLanes_i \times DetectorCount
 $$$
 
 where $L$ is the total number of lanes across all Links connected to the detector. 
+
+### Multiple detectors shared across multiple Links
+
+In a more complex layout, multiple detectors can be shared across multiple Links.
+Here, we also use weighted averaging based on the number of lanes of each Link.
+This image illustrates such instance:
+
+<center>
+![](/img/terms/vol/two-det-two-links.png)
+</center>
+
+Observe that there are two detectors, one of which is shared by two Links, and the other one is assigned only to Link 1.
+
+We use the following formula to compute the volume of each Link:
+
+$$$
+LinkVolume_i = \sum^{D_i}_{d=0}\frac{NumLanes_i}{L_d} \times DetectorCount_d
+$$$
+
+where:
+- $D_i$ is the number of detectors attached to Link $i$
+- $L_d$ is the total number of lanes of all Links attached to detector $d$, formally: $L_d = \sum^{N_d}_{k=0}{NumLanes_k}$ where $N_d$ is the number of Links attached to detector $d$.
