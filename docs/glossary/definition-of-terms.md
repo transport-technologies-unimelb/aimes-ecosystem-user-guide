@@ -1,51 +1,47 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
 # Definition of Terms
 
+This contains some definition of terms that we use in the AIMES Ecosystem platform.
+
 ### Road Network Region
 
-> A Road Network Region (also referred to as Region) is an interconnected collection of Links, Intersections, and other entities such as emission detector and public transport routes.
->
-> One Region is isolated from another, i.e. there are no entities connected between two Regions.
+A Road Network Region (also referred to as Region) is an interconnected collection of Links, Intersections, and other entities such as emission detector and public transport routes.
 
-### Link/Road
-
-> A Link (also known as Road) is a stretch of road that connects two Intersections.
+One Region is isolated from another, i.e. there are no entities connected between two Regions.
 
 ### Intersection
 
-> An Intersection is a place where two or more Links meet.
-> It could be a junction that connects more than two roads in different directions, or a signalised pedestrian crossing.
->
-> Typically, an Intersection has a traffic signal. On some Regions, an Intersection is associated with SCATS vehicle counters to count traffic volume.
+An Intersection is a place where two or more Links meet.
+It could be a junction that connects more than two roads in different directions, or a signalised pedestrian crossing.
+
+Typically, an Intersection has a traffic signal. On some Regions, an Intersection is associated with SCATS vehicle counters to count traffic volume.
+
+### Link/Road
+
+A Link (also known as Road) is a stretch of road that connects two [Intersections](#intersection).
+
+:::note
+Because an Intersection can be a signalised pedestrian crossing, a Link may not stretch an entire block.
+Observe the following example at Lonsdale Street, Melbourne, where the stretch of road is divided into 2 different Links, separated by a signalised pedestrian crossing.
+
+<center>![](/img/terms/lonsdale-st-crossing.png)</center> 
+:::
 
 ### Panorama
 
-> Panorama is a 360-degree panoramic photo of an Intersection.
+Panorama is a 360-degree panoramic photo of an Intersection.
 
 ### Volume
 
-> Volume represents the number of vehicles _exiting_ a Link within a period of time.
-> Actual volume data is obtained from vehicle counter inductive loops installed in signalised intersections, placed **at the end** of every Link.
+Volume represents the number of vehicles _exiting_ a Link within a period of time.
+Actual volume data is obtained from vehicle counter inductive loops installed in signalised intersections, placed **at the end** of every Link.
 
-#### 15-minute volume
+Volume per Link is the **total** number of vehicles passing through all detectors assigned to that Link.
 
-> 15-minute volume is measured in the number of vehicles per 15 minute.
-> This represents the actual sum of counted traffic within a 15-minute period.
-
-#### 1-hour volume
-
-> 1-hour volume is measured in the number of vehicles per hour (vehicles/hr).
-> This represents the actual sum of counted traffic within a 60-minute period.
-
-#### Hourly volume {#hourly-volume}
-
-> Hourly volume is measured in the number of vehicles per hour (vehicles/hr).
->
-> Unlike 1-hour volume that represents the actual sum of vehicle counts within an hour, we use the term _hourly volume_ to represent any volume data that is normalised to 1 hour.
-> For example, we can normalise 15-minute volume to hourly volume by simply multiplying it by 4.
+More on Volume on this page: [Traffic Volume](volume)
 
 ### Speed
 
