@@ -139,4 +139,4 @@ More on Volume on this page: [Traffic Volume](volume)
 ### Estimated queue length
 
 > Estimated queue length is measured in metres.
-> Queue length is measured from the intersection until the last vehicle that is queueing at the intersection at a particular time.
+> Queue length is estimated from our internal engine.
