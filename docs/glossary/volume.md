@@ -62,24 +62,6 @@ In which case, the Link volume will be equal to that detector's value.
 ![](/img/terms/vol/one-det-per-link.png)
 </center>
 
-<!-- ### One detector shared across multiple Links
-
-Occasionally, a single detector is shared by two or more Links.
-Therefore, the detector reading must be divided into multiple Links.
-We use weighted averaging based on the number of lanes of each Link.
-
-The below image illustrates such instance.
-
-<center>
-![](/img/terms/vol/one-det-for-2-links.png)
-</center>
-
-$$$
-LinkVolume_i = \frac{1}{L}\times NumLanes_i \times DetectorCount
-$$$
-
-where $L$ is the total number of lanes across all Links connected to the detector.  -->
-
 ### Multiple detectors shared across multiple Links
 
 In a more complex layout, multiple detectors can be shared across multiple Links.
