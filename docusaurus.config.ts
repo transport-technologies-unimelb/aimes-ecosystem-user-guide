@@ -36,10 +36,12 @@ const config: Config = {
       "classic",
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: "./sidebars.ts",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -72,12 +74,6 @@ const config: Config = {
         src: "img/icon.png",
       },
       items: [
-        {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Docs",
-        },
         {
           to: "https://aimes-ecosystem.unimelb-transport-technologies.cloud.edu.au/app",
           label: "Open Dashboard",
