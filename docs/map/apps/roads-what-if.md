@@ -56,7 +56,7 @@ You will see this screen once the analysis is done.
 #### Overall stats
 
 This section shows the overall change in volume, speed, hazard, and congestion of all predicted Links.
-You can use the Map Selection tool to draw a polygon, and the stats will only include Links in the polygon.
+You can use the Bounds Selector tool to draw a polygon, and the stats will only include Links in the polygon.
 
 #### Time
 The map shows the difference plot at a particular time.

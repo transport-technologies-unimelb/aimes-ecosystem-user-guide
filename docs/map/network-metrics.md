@@ -36,7 +36,7 @@ First, on top of the Network Metrics section, click on the "Selection" option.
 
 Here, Network Metrics will show the average statistics for all Links and Intersections that are visible on the map.
 
-If you want to get the statistics for an arbitrary polygon, use the Map Selection tool and set the option to Polygon.
+If you want to get the statistics for an arbitrary polygon, use the Bounds Selector tool and set the option to Polygon.
 
 ![](/img/map/network-metrics/polygon.png)
 
