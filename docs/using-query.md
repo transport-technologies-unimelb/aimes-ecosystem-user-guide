@@ -96,3 +96,45 @@ This is what the query will look like:
 The above is just an example.
 You can choose other attributes and aggregation functions in the summarize block.
 You can choose, for example, "Sum of Traffic Volume by 15-minute Period".
+
+## Running and visualising the query
+Once you have built your query, the next step is to start running and visualising it. 
+Click on the "Visualize" button to do so. You then will see the Data Explorer page.
+
+Depending on the complexity of the query, it may take a while.
+
+### Setting the time window
+Use the time selector in the top-right corner to select the date range.
+You can choose one of the preset ones, or use the "Custom range" option to choose an arbitrary date and time.
+
+<center>
+![](/img/query/datex-date.png)
+</center>
+
+### Configuring the plot
+
+The platform does not define the default visualisation method.
+Thus, when the query finished running, you will see a message like this: `Visualization not configured properly`
+
+You can configure the plot using the left pane of the Data Explorer.
+
+First, choose one plot type from the options.
+Once you clicked it, you will see an option to set the attributes for x-axis, y-axis, and other plot-specific options.
+
+<center>
+![](/img/query/datex-chart.png)
+</center>
+
+The plot will re-load and display the visualisation.
+
+### Viewing the data as a table
+
+At the bottom of the page, you will see a toggle to switch between "table" and "plot" view.
+Click on the Table View (left) to view the data table.
+
+![](/img/query/datex-switch.png)
+
+### Exporting as CSV
+
+On the bottom right corner, you will see an Export CSV button.
+Click to export the data as CSV.
