@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /api-reference
+slug: /api
 sidebar_label: Overview
 ---
 

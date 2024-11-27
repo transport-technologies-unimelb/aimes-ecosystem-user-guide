@@ -60,7 +60,7 @@ const config: Config = {
         config: {
           api: {
             specPath: "src/openapi.json",
-            outputDir: "docs/api-reference",
+            outputDir: "docs/api",
             sidebarOptions: {
               groupPathsBy: "tag",
             },
@@ -114,8 +114,8 @@ const config: Config = {
           label: "Platform Docs",
         },
         {
-          to: "/api-reference",
-          label: "API Reference",
+          to: "/api",
+          label: "API Docs",
           position: "left",
         },
         {
