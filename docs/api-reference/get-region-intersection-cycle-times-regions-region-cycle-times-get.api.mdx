@@ -1,0 +1,71 @@
+---
+id: get-region-intersection-cycle-times-regions-region-cycle-times-get
+title: "Get Region Intersection Cycle Times"
+description: "Get Region Intersection Cycle Times"
+sidebar_label: "Get Region Intersection Cycle Times"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVduO0zAQ/RXLTyC1TXe1T32rYAUVLKx2C0JaVZWbTFMviR18qYiq/DszdtImW5abeGrquZ05czw+cCdyy2cP/FWdFsCWsgS+GnFdgRFOarXI+Izn4NYGcvy7lsqBsZCSbZ1SzNphjG3tdt05DoyYgI94JYwogeKx4IEr/IPJoz+apcJ/lXA7/DbwzUsDWNwZDyNu0x2Ugs8O3NUVRVlnpMrR00lX0MFdTNM0o2Nmqt3l/ebB1H+VeKtNKRyeZMLBuM3VVQs8Nc2KEtoK+wZLOS6nU/rJwKZGVsQR+t77NAVrt75gd60zZko1MqkcuYuqKmQa6E4eLcUcznEJYwQ1IB2UoVZlaEhOxsoB3791QQz1hiqzX9G86LkyFAdGnwbdC1S+3IDpBfb0hTPq3PTmEXMN5vJwmtsQ1aDS6klmSnwHqTYB0kkUkW/2BhyLCmGDDk6obGu3rHMcGDEB4ibkV9Or8xl/0I5ttVeh+tXl5bnHZ1HILMyYXRujzd9IYDjqDJyQBX09o4VCpwOrUPXHbbhyw6nSVWlPiOsc59WsTrPpFNeR+V5HgNRiafNfqeQG9S7yoK3o8rxrIIMtyfo7XVBfsXTr1xPBid7I7vNtvI70/axY5/J2ubw9SxinPxzqH8iKEIPb6XaPhjWIK27Gk3ZjJof40SRB3uGOUpQFs+9WpTc4b75zrrKzJBGVnHiFbsVm7IxQqHHjxg7SndKFzlEFk7TQPptA5ifCJ/sLTpsKwXkjXR0yziv5Duq5JygPq775nmQXhdR3Oi2icNjt1R2ILNzzdud+GWPQmByasFi2Om6nSOx8cXN9z65TbWuL6mTz2wV16stS4HZG++2COc0MoEpgDwwHIJhUzO2APY2tCuFou03amyTScJNaHJ+UJPawH6a37Aap0t4oYGO27Bhjyx5jSUiPqYZUg8o7qjs2pco8qrhORBgUdhkKBT1MJxeTKR1V2rpSqB6gP5PKQF5Hyh18dwn2K8PdCwgPrYwe2veTgmfHp7SvJBztDtGQ6+GwERY+maJp6Di+iaSGTFqxKeiWbUVh4QzHcVPxF3fthXzJ+Ojn+L5CfXp896Lw5BIUuBdGUp3/X7PTpqr7NTssLS9hubWCJQTROMfXuXK9sLNdTNCPd/jN9RKl/QOK7io+
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Region Intersection Cycle Times"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/cycle-times"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Region Intersection Cycle Times
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"time","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Time"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"time":{"type":"string","format":"date-time","title":"Time"},"intersection_id":{"type":"string","title":"Intersection Id"},"cycle_time":{"type":"number","title":"Cycle Time"}},"type":"object","required":["time","intersection_id","cycle_time"],"title":"CycleTimeRecord"},"title":"Response Get Region Intersection Cycle Times Regions  Region  Cycle Times Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

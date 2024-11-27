@@ -1,0 +1,71 @@
+---
+id: get-links-regions-region-links-get
+title: "Get Links"
+description: "Get Links"
+sidebar_label: "Get Links"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v2zgQ/SuETruAbblBTr4FbdA1NkmD2F0UMAKDlsYyG4pU+eFdwfB/3xlSkuU6TlujJ9PkzJvhmzcj7hLHC5tMFsmT5jlT4P7V5oVJXmvvkudBoisw3AmtpnkySQpwSynUi10aKHDTLpvFstlGg2SQVNzwEhwYQt4lCv+gc7TEY6HwX8XdBtcGvnlhAMGd8TBIbLaBkieTXeLqirysM0IVaOmEk7TxFGH2+2fythVmAZYcrsZj+snBZkZUlDNaz3yWgbVrL9lTY4xYmVYOlCNzXlVSZOGK6VdLPrvTJLgxvKbMHZQhVmWIGCdiZJG/lTAytx/QNiB7kQsMq+pP68DOsdt+0O0oL2VCt2yBZgGCPRAEIlZa1sj6xXCPrf8+lFlJcynSp+iNOBJUgXV9DUf5cgXmTZy76I04aLyUXEV6T6AEVq/4AdaDL9ldQEC4jFc8E66+NLH3rT8VsgLIUe6lcBcnNyMMdhcwENJg7y2j7WUFCM07p0OqpRGFUEvKw1jISNnLqNCLahvQ2LSHxqKisdHc74ryAbF+LkZWXcz6aZD3Fc6RQeugV19x/2goLai3j5u313hd33TC7yu3J7tj1fQLfrZcZ/g9Q8l3WniIc/wOZzKxeBidcQKyjzhG6NCyOE0taxas2UYDZIa4uR5fn07VB+3YWnsVanR9dXVq8Q+XIg9Tld0ao82vDN3j4ZqD40KGMfv69JU6Ozr9Cf11ank+VL+d8d0w0jFBumJpi7cm/D1+YXgRmq/t4nOmgYymVX+gPLpXDN3Y9Yp8oDeye/4aHyJ9rwVrTf6azx9PAGP1j4vayYbyArfRzZsgfPJp7Cdp8y5Id3GxT2Vjb8Fs2weBN1jPZONcZSdpyisx8kqUIFdDZ7hCjRo3dJBtlJa6wCqPMql9PoLcj7hPt+9CV6P6vQkzHRFvKvE31Deeklg8949nJKsolL7R4dMeNttXyQZ4DiTW5s3yZYhOQzIgNoRa6+DaEHczvb+dsdtM29qi+tjN45Ru6suSm5rOH6fMaWYAVQBbYEgwZzhM3QbY976V5G6tTTlqOoVnoVOaPD4rQezhfZhes3ukSnujgA3ZvGWMzXuMpQEeoY6pxiHVUt2yKVTuUaV1ykUZP5YhUKj3ePRuNI5PDetKrnoJ9aVwJJKOWAf/uRRvJUIHhTx2jUwWzVuQnCfdszAqBUu3wWhktNutuIXPRu73tP3NA7G6wOWWG8FXVAOsfS4srVGLay4tnOTTzZ3kj6emvf5kyeD1PFtVKJLElktP/3D5AvXhCRvGRiMVyiAe3uBLs3I9t5MpR7rs+ubj7RxF9T9yNPPj
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Links"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/links"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Links
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"id":{"type":"string","title":"Id"},"street_name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Street Name"},"polyline":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Polyline"},"openlr":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Openlr"},"length":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Length"},"num_lanes":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Num Lanes"},"capacity":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Capacity"},"speed_limit":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Speed Limit"},"road_type":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Road Type"},"origin_intersection_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Origin Intersection Id"},"dest_intersection_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Dest Intersection Id"},"dest_intersection_cp":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Dest Intersection Cp"}},"type":"object","required":["id","street_name","polyline","openlr","length","num_lanes","capacity","speed_limit","road_type","origin_intersection_id","dest_intersection_id","dest_intersection_cp"],"title":"RoadNetworkLink"},"title":"Response Get Links Regions  Region  Links Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

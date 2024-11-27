@@ -1,0 +1,71 @@
+---
+id: get-region-link-volumes-regions-region-volumes-get
+title: "Get Region Link Volumes"
+description: "Get Region Link Volumes"
+sidebar_label: "Get Region Link Volumes"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vl9v2zYQ/yqEnjbAtmw36Ta/GVjQGWvWIHGDAUEQMNJZYkuRKkkZEwx/992RlC0lcbYM215sivf/7nd33CWOFzZZ3CW3WjYV2OR+lOgaDHdCq1WeLJIC3IOBAj8fpFBfH7aBMd7Zh454IKBAMkpqbngFDgxp3yUKP1BZ4EWyUPhVc1fi2cC3RhhAY840MEpsVkLFk8UucW1NUtYZoQrkdMJJurgOavb70UGzE/gX9X5rwLRvUrzRpuIOb3LuYBx1ddbW9Nm3VQnVOIyUl8Dz00Y3XNqBVa7aTxufDlBNRVmfosDsHH/e0emMTu/p9AOdfvLUKR1nc39+58/n/vzen3+cUsWG4ZCn8UY1UiZ75MjBZkbUVFW8Xm2YhI1jUNWuHbFBPExYZsExp5krgdmKSwnWsVpbKx4lMHT9EQx75BZyphXjWy4kJwomj096ibsMetnS52n/v3rRL5fOQb6hTE/BkcOGN5LQcfvp42I+nZ+NZ7NxodRYiaJ0su2H7G3tKeUGbI0Ngj2FOufTKf0NE3DTZBlYu2kku47MqCrTyoFyHjB1LUXmezH9Yklm99xPbgwnF4SDytuqDXWwE8GyB/M/g/wo8R0v8td68SOysJUv75bLpm8r1KjHe+sZkLNRwr2ktOuLLZQiw4KnJYkfvmbn44ASD/qo9DPpwvbslOnHL5C5QYnvuvHQxdP5Gj3paQtz8BoybXxMx5ETCsQ+ICrD/GE+9Dg4451lHfFAQAF0jxw8m549B8Fv2rGNbpS3djafP+fArIncg4BdGKPNWzAyxEIODruETifAInU2oB4n1skRI9CTAqu8vz+WoIPkASM6OEghVrZ4DU6X2BC88CAJLKdZfTLYmqh/VX6KK5iOfPcDUMb0huyeDuPnkL6XjHUsv6zXV88UhuoPi3oCRuQluFLHzesXKS7JRZLGfZvuwmGfbg8SFsy2W7SNwfompXO1XaQpr8UEEV6BfBw7wxVi2Lixg6xUWuoCqz7JpG7yCeTNhDfpdua3hYWsMcK1XuOyFr9Cu2zIjbv7PvmGYBaA02c6TiZ/2U1eGut+GsSx/PsYhcbEQNkRaqPDuAqJXK4uL27YRaZtaxGNbHm1okibquI4v5F+taLlYABRAdsw9ZlQfls8la0ldzTuJrFzeOY7J/qB84Oyh/EwvWGXmCrdGAVszNZdxti6l7HUq6fRMUg1qKJLdZdNofIGUdumXFCaaEKSIV//6WQ2mdIVbjRXcdVz6DQ0BhA6pNnBHy7FGIXvL+/VLsLmLr64SHhxeHxtj2+9Eq0T225Hm/Szkfs9XYctSdXPhaWtetyTT3w4TKLku+vYcN+zZPSyb1+hPT7V4rZI/DD5+2b+67fLab+fPvteDyDKxLfHkfeePowg5n8/wV3jqbZvs3MmAsBP6tiN5EEgLvEtUrue2LPFQq4fhtOHizX27Z/OEySk
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Region Link Volumes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/volumes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Region Link Volumes
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"time","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Time"}},{"name":"minutes_ahead","in":"query","required":false,"schema":{"anyOf":[{"enum":["0","15","30","45","60","75","90","105","120","135","150","165","180"],"type":"string"},{"type":"null"}],"description":"If left empty, minutes_ahead is set to the smallest possible number based on available data.","title":"Minutes Ahead"},"description":"If left empty, minutes_ahead is set to the smallest possible number based on available data."},{"name":"model","in":"query","required":false,"schema":{"type":"string","default":"VOL:2024-11-gnn-nightly","title":"Model"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"time":{"type":"string","format":"date-time","title":"Time"},"link_id":{"type":"string","title":"Link Id"},"value":{"type":"number","title":"Value"},"unit":{"type":"string","enum":["vehicles/hr","vehicles/15-minute"],"title":"Unit"}},"type":"object","required":["time","link_id","value","unit"],"title":"VolumeRecord"},"title":"Response Get Region Link Volumes Regions  Region  Volumes Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-region-regions-region-get
+title: "Get Region"
+description: "Get Region"
+sidebar_label: "Get Region"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1v2zAM/SuCThuQxFnRU24Blm3B1q1os2FAUBSKTTvabMnVR1Av8H8fKcuJ07QdsJMlkRQfH5/oPXeisHy25jdQSK0svxtxXYMRDnfLjM94Ae7eBGP82Pt+f482PuK1MKICB4Yu2nOFG4zrfNAsFe5q4ba4NvDgpQG81xkPI27TLVSCz/bcNTVFWWekKtDTSVfSQYeLt+0dRdsa84OlgIvplD4Z2NTImuCi961PU7A29yW7ic54V6qVA+XIXdR1KdNQXfLLUsx+AKI2VLuTXQaZvQYMyWlHsdiXvb6SvSUSpJOivK+1lR1Wyga5fFw6qDri4h3KVxswGHR2ghTEE2GMaDBNJfr4C9xIddwcYHaJ2XWfuCVbBX+0ehX4qvdB/xyE8yaS0mV4GtieQesv+tAHt0cfvfkFqTvRw5rojnw+Q9cA9ADP3TM6oTSX08tzbXzVjuXaq9C3y4uLc48fopRZ0AZbGKPN/0snAydkecLXqUOp0xOrUM23fKiCA6+HE4lIiiCDl8n+ojuAVGJli9cafIXvRBRw7NzLroEMtiLrv5pIdXWpo9+gRUd6O3ZfLuN9R99zyXqXT6vV9dmFXfdPm/oRHLvpZxGOqa2OUy1MLpxKM57EwZbsu0WLJgtm1080b7CVfOtcbWdJImo58QrVWG7GzgiFY8a4sYN0q3SpC2zwJC21zyaQ+Ynwye5deLkWUm+ka8KN81p+hmbuKf36bmi+JUV1Ghk6HZojwmE/VrcgMjD9u5nxn2MMGpNDG4ZOrkNo5Gy+vFrcskWqbWNReGx+vaRKfVUJ05D9esmcZgZQALADhtwKJhVzW2BPY+tSuFybahIfiUjDI4k4vitJ7GE9TOfsCqnS3ihgY7bqGWOrAWNJuB6vOqUaVNFT3bMpVeZRoE0iJNGEVYZEodXTybvJlI5wbLhKqAGgExWcCOTArINHl2BZMryeAGQfFbKOfzOLwbP4Y8OebTENGff7jbDw3ZRtS8cPHojONS53wkixIfKx6Zm0tEb55aK0cIbjMGv4m5v4pN4yPnoeXy8HRVrYidLTDpe/oTn+fMOoiBohBJ1xjv/I2g3CziYbCfLwVD4uVqimv8A0yZw=
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Region"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Region
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"id":{"type":"string","title":"Id"},"name":{"type":"string","title":"Name"},"initial_position":{"prefixItems":[{"type":"number"},{"type":"number"}],"type":"array","maxItems":2,"minItems":2,"title":"Initial Position"},"timezone":{"type":"string","title":"Timezone"},"features":{"items":{"type":"string"},"type":"array","title":"Features"}},"type":"object","required":["id","name","initial_position","timezone","features"],"title":"Region"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

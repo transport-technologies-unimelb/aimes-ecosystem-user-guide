@@ -1,0 +1,71 @@
+---
+id: get-intersections-regions-region-intersections-get
+title: "Get Intersections"
+description: "Get Intersections"
+sidebar_label: "Get Intersections"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVV1v0zAU/SuWn0BqmzLtqW+VmKCCwbQVhFRNk5vcpgbHDv4oRFX/O/fazpquG4inuvb9OD7n+GbPvagdn634rREV0+B/GfuDKdGZ4Pn9iJsWrPDS6EXFZ7wG/yC1B+ugpE33YKGOv3nx8OQYE/iIt8KKBmgfO+25xj9YLGXgsdT4rxV+i2sLP4O0gM28DTDirtxCI/hsz33XUpbzVuoaI730ijZuU5nD4Z6yXYttwVHCxXRKPxW40sqW8GD0XShLcG4TFLvNwVirNIhaewoXbatkGa9cfHeUsz8HIawVHSH30MRerSWivEydZfU3wMjkYcSV8IMgHZo12EHQRzymqATgxSi6OJIkay2UdBD7Ct193kSic9raGAWCIgeVlOLEWF/p7ljigBVzmFl/RyVPZFnR7RL8BO+k/aAiGepT8tNi4AnCe5QuKcDegWfDIMeSqo7lBXtyjAmIk5BeTi/PVf5kPNuYoCPTlxcX5xFfEXAVVWZX1hr7PyY4FbsCL6SKsj/vBmXKk9MzfbJDBvLQI6pR6cP9UYvec0ftE0C6YuPqvznuGh0vauCPxV4OjWSwJZ3+ywd0r9Q6xw3EP9Kb2H35Gm8Tfc8160PeL5c3ZwWT+qeintmI8IHfmjy74ijCMTPjRZ5bxT4tDoV8kufA7vqBFSzqy7fet25WFKKVk6BlA2o99lZo9LD1Yw/lVhtlalR9UioTqglUYSJCsXsTXxrWDlb6Llact/IDdPNAYFb3w+M7slkyzjDoOHriZj81tyCqOBHyTP02xqQxBRA7Um9MTM1EzhfXV3fsqjSuc+hGNr9Z0E1D0wjb0fnNgnnDLKArYAcMCRdMaua3wJ7mtjgBNsY2k/xyRBlfTsbxRUtiD+/DzIZdI1UmWA1szJY9Y2w5YKyI5bHUKdWg657qnk2pq4Cu7QohiSa8ZWwU9Z9O3kymtNUa5xuhB4Ces8aJeR4J9vDbF3g7GV9WxLPPtlnlbxYlzwafr2FZlHKL3Sl4v18LB1+sOhxo+2cAYnmFy52wUqxJE/RCJR2t0aMboRyc4XqcS/zVbX5+rxkfPY+3d4kmi+yECvQPlz+gO35y41jJ1iEE6XCOX8bWD9LOpiD59PE9vbtaosn+AAp31iU=
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Intersections"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/intersections"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Intersections
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"id":{"type":"string","title":"Id"},"lat":{"type":"number","title":"Lat"},"lon":{"type":"number","title":"Lon"},"signalised":{"anyOf":[{"type":"boolean"},{"type":"null"}],"title":"Signalised"}},"type":"object","required":["id","lat","lon","signalised"],"title":"RoadNetworkIntersection"},"title":"Response Get Intersections Regions  Region  Intersections Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

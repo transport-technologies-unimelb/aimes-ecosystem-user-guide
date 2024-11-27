@@ -1,0 +1,71 @@
+---
+id: get-link-by-id-regions-region-links-id-get
+title: "Get Link By Id"
+description: "Get Link By Id"
+sidebar_label: "Get Link By Id"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vt9v2zYQ/lcIPW2AbblBnvzmtUFnzEmD2B0GGIFAS2eZDUWq/OFNMPy/946UHLlOmsIb9mSZvPt49913R+4Tx0ubTFbJg+YFU+D+1uaJSd5o75LHQaJrMNwJrWZFMklKcJkU6ilbN5koMgMl7tis/cjCHv7FrQxNk0FSc8MrcGDojH2i8A/CRHPcFgr/1dxt8dvAVy8M4DHOeBgkNt9CxZPJPnFNTV7WGaFKtHTCSVp4iDCHw+CILIp/jYqJHg6P5GlrTA4sGV+Nx/RTgM2NqIkPtFz4PAdrN16yh9YYcXKtHChH5ryupcgDfekXSz77XgC1IXKdiCdg5G8ENaBlwArEXBFeNZ82gddTN+KjXVFeyoSy6YAWAYLdEQQi1lo2WLSL4e47/0OQipLmUqRP0RtxJKgSa/cSjvLVGswPcebRG3HQOJNcRXrPoARWqXwD685XbB4QEC7nNc+Fay4N7H3nT4WsAQrslkq4i4NbEAabBwyENNi/WbS9rABhACxpk2ppRClURnEYCzkpOIsKvai2AY3NemgsKhobyv1Xp3xArJ87I68vZv38kPc1TaDOQa+/4PrJ4FnFqdRv3l7jHfvmKPy+cnuyO1VNv+CvlusVfl+h5Dst3MW7YI4jHROkFK/H1+dD8E47ttFeBaqvr67OLf7kUhRhCLIbY7S5fEYW4LiQYVo6qOy5gdT5ye5PyOhY9MfnInJjeNObvnMdA6QUK1v+aFDf4oXAy9BDXTO+ZhrIaDvuDQFRXvHo1q5Xq2d6I7uvp/Eh0vfSYZ3J78vl/RlgrP5pUT/iJULSYL811GYYHLitbt8I4eKnEZ6k7RMh3cePQxqeCOleFAdSNJhd9zbwBiubbJ2r7SRNeS1GXokK5HroDFd4vRo3dJBvlZa6xHqPcql9MYLCj7hPd+9Cm6KcvQlDGhGntfgDmqmnSFaP/e0FCSxKpm90rBUPi91TYgu8AJJt+8j4a4hOQzIgXoTa6ODaUjid3d4s2E2ubWNRh2x6P6NMfVVx09D+/Yw5zQygHmAHDKnmDKej2wL73reW3G20qUZtz/A89Ewbx2cliD3Mh+kNu0WqtDcK2JAtO8bYssdYGuAR6pRqnDod1R2bQhUe9dqkXFTx9gsHhcqPR+9G4/h2sK7iqhfQmShONHNk18E/LsXURGioEMy+FcyqfRvS5Jscn4lBM7SCwwuruMWDyXS/X3MLn408HGj5qwcieIWfO24EX1M5UAaFsPSN2txwaeEsquMwSn55aHvuV5YMXo62E4gidey49PQPP5+geX7Y0nj5H09FVsL0anVKOceNKb5Pa9dzORu21BTHzv14s0RFfwN3/CI2
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Link By Id"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/links/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Link By Id
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"id","in":"path","required":true,"schema":{"type":"string","title":"Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"id":{"type":"string","title":"Id"},"street_name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Street Name"},"polyline":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Polyline"},"openlr":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Openlr"},"length":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Length"},"num_lanes":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Num Lanes"},"capacity":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Capacity"},"speed_limit":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Speed Limit"},"road_type":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Road Type"},"origin_intersection_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Origin Intersection Id"},"dest_intersection_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Dest Intersection Id"},"dest_intersection_cp":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Dest Intersection Cp"}},"type":"object","required":["id","street_name","polyline","openlr","length","num_lanes","capacity","speed_limit","road_type","origin_intersection_id","dest_intersection_id","dest_intersection_cp"],"title":"RoadNetworkLink"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

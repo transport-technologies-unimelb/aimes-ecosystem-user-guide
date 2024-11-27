@@ -1,0 +1,63 @@
+---
+id: list-regions-regions-get
+title: "List Regions"
+description: "List Regions"
+sidebar_label: "List Regions"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVV1v2jAU/StWnguhqE+8IY11aG2HWjpNQlVlkpvgLrFTf6AylP++e+0khNIy7SWJr+/H8bnnOvvI8txEk1V0D7lQ0kRPF5GqQHOLq3kaTaJCGPusw273zsFGF5EGU+EKMME+Go9G9ErBJFpUFI7BDy5JwJjMFey+cca4REkL0pI7r6pCJL5a/GIoZh+ZZAMlpy9hofTJK02grAilREpPu6sASxirhcwxqxW2IAOiri8iyUs453VH++gnpLCCF8+VMiKApmqQibd5KL7qckhXrkFj0IkFSWssXGu+wzIlb+PHuBDysOhghsJs0Rauaa+EP0qeBb5sfdA/A26dbkhpuToOrE+gtYm+tsH1wUetXyAJrX11QkNK0kC6Gz4/oKsHuofn6VAmCOsMjlYY7AaVxhoddu9rVFpdE8Sr0dWpwO6UZZly0vf8ajw+9fjJC5F6gbGZ1kr/j/6OZZeC5aI4o8tCJUe7XO5+ZH0FdT3pLAKR5F5CnxN0owJAOmJp8nPiuMVh4zkc2P7c1ZPBlrT7LwHQuULpxq/X3gO9gd3Pj/El0PdRsdbl23K5OEkYun/c1L5UCBrYjaLLKtxLFbcbXMS6czCgt6DDNDuNPYw21lZmEse8EkMnUcLFemA1l6hFbQcWko1Uhcqxs8OkUC4dQuqG3MXbSz/uBhKnhd35jNNKfIfd1FHV1VN/+4GkFMTRd+q6wr3RzxVhAp6CbodtEv0aYNCAHGp/U2XKhzZkTee3swc2S5TZGVQcmy7mdFJXllzvaH8xZ1YxDdh52AJDUjkTktkNsPexVcFtpnQ5bKaDJ346GhyPUhB7eB6mMnaLVCmnJbABW7aMsWWPsdinx1THVIPMW6pbNoVMHSpzF3NBNOEpfSHf49HwcjgiE941tuSyB+hd+4+00XFr4c3GeDDhB8dD2TfSWEX68LvbYHoy7fdrbuBRF3VN5lcHROMKP7dcC74m0lc0pk2bqPO/wTONP7mKhLflhQttfXerkCY6kV7PltjQvzMHj2c=
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List Regions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List Regions
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"items":{"properties":{"id":{"type":"string","title":"Id"},"name":{"type":"string","title":"Name"},"initial_position":{"prefixItems":[{"type":"number"},{"type":"number"}],"type":"array","maxItems":2,"minItems":2,"title":"Initial Position"},"timezone":{"type":"string","title":"Timezone"},"features":{"items":{"type":"string"},"type":"array","title":"Features"}},"type":"object","required":["id","name","initial_position","timezone","features"],"title":"Region"},"type":"array","title":"Response List Regions Regions Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

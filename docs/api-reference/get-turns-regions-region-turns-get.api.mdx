@@ -1,0 +1,71 @@
+---
+id: get-turns-regions-region-turns-get
+title: "Get Turns"
+description: "Get Turns"
+sidebar_label: "Get Turns"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVU1v4zYQ/SsETy1gW94gJ98MrDcxmuwGjlIUMAKDkcYyNxKp5YdbwdB/7wxFOVKdbNuTqOHM8PG9p9GJO1FYvtjyjRY5U+D+1OaVlaLR3vHnCdc1GOGkVuucL3gBbue8UXZnoMCg3cXFLoYxgU94LYyowIGhzieu8AWLu0zclgrfauEOuDbww0sD2NwZDxNuswNUgi9O3DU1VVlnpCow00lXUmDTtWnbZ6q2NaIASwVX8zk9crCZkTVhxuxHn2Vg7d6XbBOTsVemlQPlKF3UdSmzcMXku6Wa0yUIYYxoCLmDKpxVGyLGye7kvdHVrpTqdSfzn0H/gnnsDvMYstliXP+XqlSPapDn97JB+SrouL65TfH9bvWFHunt5tvTzS1J2ff7jHxnruNw0vfRL98xOBJkO77XCG7EMehK/vna2SelrXaoWEc8uwHHaNOyTkTL4oLFMCYgKIJ1Pb++FPOrdmyvvQpEXF9dXWb8LkqZBzHZyhht/o/WY01zcEKWtPpA9FJno12hmm/74PexNO3kHJGIpADD2+c34ntr9WTd6Q4gXbGyxc+McY/GFgXwc7OPUwMZLKXdfxOd7tUdHfMGIr/R27H78TU+d/S9d1ifcpumDxcNO/XHop5tQ7jAHXQcRWHS4BRZ8CSOo+TULdrExXwL5tjPIW9QT35wrraLJBG1nHklKyhfps4IhR41buogOyhd6gJVnmWl9vkMcj8TPjl+4jRyLGTeSNeEjsta/gbN0hOI7fNw+5Fs1RllmPQ2UUKwH4YHEDmQWeOo/GOKRVNKIDak2utQGolbru9Xj2yVadtYdB9bPqzppr6qhGlo/2HNnGYG0AVwBIYECyYVcwdg/6ytS+H22lSz+KWILHwpEceTksQe3ofpPbtHqjTyCmzK0p4xlg4YS0J7bDWmGlTRU92zKVXu0aVNIiTRhLcMBwW957NPszmFam1dJdQA0NAKI5OciXXwl0vwVjJ8QQHHKdpkG39BVLw4/406p6B0BzyNkk6nF2HhyZRtS+EfHojVLS6PwkjxQhqg9rm0tEYv7kVp4QLPee7wXzbx8/qV8cn7OHtXKLLEUZSe3nD5Cs3bnzOMjWgVQtBtLvEHV7tB2cWUI1+ev5ubVYqm+hsfobgY
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Turns"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/turns"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Turns
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"from_link_id":{"type":"string","title":"From Link Id"},"to_link_id":{"type":"string","title":"To Link Id"},"turn":{"type":"string","enum":["RIGHT","LEFT","THROUGH"],"title":"Direction"}},"type":"object","required":["from_link_id","to_link_id","turn"],"title":"RoadNetworkTurn"},"title":"Response Get Turns Regions  Region  Turns Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-region-link-queue-lengths-regions-region-queue-lengths-get
+title: "Get Region Link Queue Lengths"
+description: "Get Region Link Queue Lengths"
+sidebar_label: "Get Region Link Queue Lengths"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vt2P4jYQ/1esPLUSX8txfeANtWiLervd22WrSiuETDKA7xw7549VEeJ/vxk7IQkcXLdq+4BwPN8zv5nxPnF8Y5PxS/LRgwf2AdTGbZNFJ9EFGO6EVrMsGScbcEsDG/xcSqE+L78Q91IGbltS7LJiOSGjcNJJCm54Dg4MmdsnCj9QcZRAslD4VXA03sHLL14YQMPOeOgkNt1CzpPxPnG7gqSsM0JtkNMJJ+niMao5HDpHzU7gX6kX/TG7Nylea5NzhzcZd9AtdVXW5vTZtJUL5R3YJd8Czy4bXXNpW1a52v2+DukA5XMqwwAF3uPvhg43dBrSaUind3R6R6cRnUZ0eh8E6PTTgMrWjoNcLG+UlzI5IEcGNjWioNLi9WzNJKwdg7xwuw5rBcKEZRYcc5q5LTCbcynBOlZoa8VKAkOfV2DYilvImFaMv3IhOVEwa7zXyNhd1MsmIUGH/9WLZp10BvIN9TlFRQZr7iXB4uPz9Hnavb2/Hw8Hw1E3lOsYbLByoGQbsAV2BljSNhwM6K8d+pNPU7B27SV7LJlRVaqVA+UCRopCijS0Yv+TJZn9uYfcGE6xCAd5sFUYamAnouWA33+GckoWNS2k5MFSZNfacNZgZbNQ6LRoCJCqDZiGxM8FMYWZcl31B2QpVca50mCOCGgyRw5s0YpFrz6hW61qv9Qjoh1gcLp26mhwURsI0zJaeYRUm+BXPYxiHdktwjZOJhbcb85YW1Isq1hOyCiMAVAIo8HoHDf32rG19ipYHg2H5xx/cCmygBs2NUabt8CqDZ8MHLYUnS7gS+q0Ra3n2sV5VEHhsKiLVKH4WEYdHaQQc7u5Bo877CG+CXiNLJdZQzLYnKjfAwjFFU2XfA0I1OmN2b0cxi8xfd8yVrH8Op8/nCmM1W8X9SqkyFdwW11u7LB0qVGSfrmh+/t4OPTDhu7Ko5wF81qtZm+w1snWucKO+31eiJ5X2Cly1XWGK8S2cV0H6VZpqTeIgF4qtc96kPke9/3Xm7BmsJ+8EW4XNE4K8RvsJp6ceVk0yU8EuQiiJlM92MJlNbJpH4RGL+f5n10U6hLDIQyqtY7TLiZ1MrubPrFpqu3OIjLZ5GFGkfo85zj4kf4wo61iABECr3FdMKHCmjmVLSR3NC17ZRfxNHRR6cezEpQ9jIfpNbvDVGlvFLAum1cZY/NGxvpBPapqpxqrUaW6yqZQmUcE7/pcUJowymAoYGHQu+kN6ApXocu5ajj0PZi0QHVMtoO/XB8jFaHjgm/7EkIv5UuNhMfHR1sbRVjWLXpCzPs9reNnIw8Huo6rlpCQCUuruV62J54cJ1Tyw2PZiD+ypPNtDz/Drn7ovXLpiSUMmb9v5r9+AF32+/TReD2AUqZ8wNS8C/owgpj//QRXTah2TZuVMyUMwgQvO5M8iMQJPmsK1xA7Wzjk+nFc3U7n2MNfAZqLQdY=
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Region Link Queue Lengths"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/queue-lengths"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Region Link Queue Lengths
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"time","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Time"}},{"name":"minutes_ahead","in":"query","required":false,"schema":{"anyOf":[{"enum":["0","5","10","15","20","25","30","35","40","45","50","55","60"],"type":"string"},{"type":"null"}],"description":"If left empty, minutes_ahead is set to the smallest possible number based on available data.","title":"Minutes Ahead"},"description":"If left empty, minutes_ahead is set to the smallest possible number based on available data."},{"name":"model","in":"query","required":false,"schema":{"type":"string","default":"QUEUE-GNN:2024-10","title":"Model"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"time":{"type":"string","format":"date-time","title":"Time"},"intersection_id":{"type":"string","title":"Intersection Id"},"cp":{"type":"integer","title":"Cp"},"link_id":{"type":"string","title":"Link Id"},"length":{"type":"number","title":"Length"}},"type":"object","required":["time","intersection_id","cp","link_id","length"],"title":"QueueLengthRecord"},"title":"Response Get Region Link Queue Lengths Regions  Region  Queue Lengths Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

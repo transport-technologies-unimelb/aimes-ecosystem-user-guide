@@ -1,0 +1,71 @@
+---
+id: get-intersection-cycle-times-regions-region-intersections-intersection-id-cycle-times-get
+title: "Get Intersection Cycle Times"
+description: "Get Intersection Cycle Times"
+sidebar_label: "Get Intersection Cycle Times"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vttu2zgQ/RWCT7uAbblBnvxmbIPW2E03SJxFgcAwaGkss5VIlZdgBUH/vjOUZFN2kyLY9kkUOdczZ4ZsuBO55Ysn/kedFsDWsgS+mXBdgRFOarXK+ILn4LZSOTAWUtrcpiS8dShstwZy3LLbfrEdSdrx71Zm25EyWuYTXgkjSiAxjKThCn/Qa2cPj6XCv0q4A64NfPPSAEbljIcJt+kBSsEXDXd1RVrWGalylHTSFbRx35lp28nR8llI/9vFKrLHELHYl5UqhcHDNw+mfpOLvTalcLiTCQdTAi3y+xBsx968crL4Rd4eg+223ZBFW2FxwZKRq/mcPhnY1MiKMKDQfJqCtXtfsPteGE2lGpFSjsRFVRUyDRxLvljSaS4DE8YIykA6KIOvyhAznew8hwDfmkageDu5IMFb6ouZHEkcKSpf7sBEilFTYZUGMb37grZGhXnifZSX1Iw8bc4sk+F7SLUJIZ0I3+HNPoBjo9BP4VjWtYVl/YKNJO34F3NmI2W0jAlRStfz68vif9KO7bVXIazrq6tLiX9EIbNQfHZjjDZv4caYAxk4gbTE1QskKXQ6OhWq/nsf5sy43NRF/Q4VIcdCtptT0QYqDij/pbsAKcXS5q/R5xYbQeSBdJ3Iy6IBDLam0x8RhvLqXPdyETtO8HbovpzG+w6+7zkbRD6u13cXBrvqj4v6Gt8oVHAH3V8nYejjtF3wpL8/kqZbtMno/kias45ok9AQoavJqgXzPFwc3iAR+MG5yi6SRFRy5hWKFbupM0JhVxg3dZAelC50jvSYpYX22QwyPxM+eX7HabahK2+kq4PFZSX/hHrpKdSnTXz8QHzsGBYLnUZX2BxG8QFEFiZDP6c/T1FpSgJtGEV73c2zDvHl6vbmgd2k2tYWacuWdyvK1JelwIGO53cr5jQzgPSBZ2BYGcGkYu4A7Fy3KoSjeTjrW0ykocX6OB6VJPQwH6b37Bah0t4oYFO2HhBj6wixJJhHU2OoQeUD1AOaUmUe6V0nIhQKswyOAlHms3ezOW1V2rpSqCigH3BoRLgj1g7+dQkmKkM3htCanl9P/TOClBfRiyKiGJ28MHZ7lmHZDxgpWWuanbDwaIq2pe3uiiWmZNKKXUGtuReFhYtQj+ON/3bfd/HvjE++n8JXqKOnw7MoPMmEEfUL/AyPhpOfDf0YSY5+fnJDg6g69jkE09fop6f6utfz+ofJ3zctAdBJLfFNU7lI/+KiIuSOc+7DzRrb+z9IYutF
+sidebar_class_name: "get api-method"
+info_path: api-reference/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Intersection Cycle Times"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/intersections/{intersection_id}/cycle-times"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Intersection Cycle Times
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"intersection_id","in":"path","required":true,"schema":{"type":"string","title":"Intersection Id"}},{"name":"since","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Since"}},{"name":"until","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Until"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"time":{"type":"string","format":"date-time","title":"Time"},"intersection_id":{"type":"string","title":"Intersection Id"},"cycle_time":{"type":"number","title":"Cycle Time"}},"type":"object","required":["time","intersection_id","cycle_time"],"title":"CycleTimeRecord"},"title":"Response Get Intersection Cycle Times Regions  Region  Intersections  Intersection Id  Cycle Times Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

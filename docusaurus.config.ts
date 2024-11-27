@@ -60,7 +60,7 @@ const config: Config = {
         config: {
           api: {
             specPath: "src/openapi.json",
-            outputDir: "docs/api",
+            outputDir: "docs/api-reference",
             sidebarOptions: {
               groupPathsBy: "tag",
             },
@@ -109,13 +109,12 @@ const config: Config = {
       },
       items: [
         {
-          type: "doc",
-          docId: "intro",
+          to: "/platform",
           position: "left",
-          label: "Docs",
+          label: "Platform Docs",
         },
         {
-          to: "/api/aimes-ecosystem-api",
+          to: "/api-reference",
           label: "API Reference",
           position: "left",
         },
