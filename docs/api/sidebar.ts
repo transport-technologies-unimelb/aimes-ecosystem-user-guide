@@ -66,14 +66,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-link-volumes-regions-region-volumes-get",
-          label: "Get Region Link Volumes",
+          id: "api/get-all-link-volumes-regions-region-volumes-get",
+          label: "Get All Link Volumes",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-link-volumes-regions-region-links-link-id-volumes-get",
-          label: "Get Link Volumes",
+          id: "api/get-historical-link-volumes-regions-region-links-link-id-volumes-get",
+          label: "Get Historical Link Volumes",
           className: "api-method get",
         },
       ],
@@ -84,14 +84,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-link-speeds-regions-region-speeds-get",
-          label: "Get Region Link Speeds",
+          id: "api/get-all-link-speeds-regions-region-speeds-get",
+          label: "Get All Link Speeds",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-link-speeds-regions-region-links-link-id-speeds-get",
-          label: "Get Link Speeds",
+          id: "api/get-historical-link-speeds-regions-region-links-link-id-speeds-get",
+          label: "Get Historical Link Speeds",
           className: "api-method get",
         },
       ],
@@ -102,14 +102,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-link-congestions-regions-region-congestions-get",
-          label: "Get Region Link Congestions",
+          id: "api/get-all-link-congestions-regions-region-congestions-get",
+          label: "Get All Link Congestions",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-link-congestions-regions-region-links-link-id-congestions-get",
-          label: "Get Link Congestions",
+          id: "api/get-historical-link-congestions-regions-region-links-link-id-congestions-get",
+          label: "Get Historical Link Congestions",
           className: "api-method get",
         },
       ],
