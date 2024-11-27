@@ -1,0 +1,76 @@
+---
+id: get-historical-intersection-cycle-times-regions-region-intersections-intersection-id-cycle-times-get
+title: "Get Historical Intersection Cycle Times"
+description: "This resource allows you to view the estimated cycle time time series of a single Intersection in a particular region."
+sidebar_label: "Get Historical Intersection Cycle Times"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVktv20YQ/isLnlpAEhXXJ92E1kiE1q1hy0ULR5BX5IjadLnL7EMJQfC/d2ZJWqQUuRWa3HqRSO7MfPP4ZmaryPHMRrOn6McykcCWIodoNYpSsIkRhRNaRbNouROWGbDamwQYl1J/sqzUnjnN9gI+MbcDBtaJnDtIWRJM4Vv7Y8EIsExvGWdWqAwPF8qBsZAQABMKDwpunEi85AaRMvw8ea/eq0cL7Bl1EnhmXKXs2Ssn5DNJ8xzIBvmQaOWMlsGNgGi4ygAN/Ik+JlyhBxKxemfkTM4/i9zn7IcpS3lpAx4p5N461HBfBEa0DaagMYWOE2TBUUEbVmCKQLlJNIp0AYZTcIsU85eBW2MKnTYi4XItesGvQ7LWZM6um8Dtun1YDyTt8HUt0vVAGUEQ+JAYLGoVKXxBBxp7eCyonAV3O3w28NELA+igMx5GkU12kPNoVkWuLEjLOoPVQkknnKQP942Zuh69WD5y6T9DDIiByetjhXJ0CB89mPIiiK02yE/8kiJLx5S0Hu5DsN1HCwX/RmiPwXZdr8iiLbC4YMnI1XRKf8Pue/BJAtZuvWT3rTCaIs4j2UicF4VEYpF4/MGSTnXqGDeGUwTCQR6wCkMkdaJBDg5eGkaYFvXohASX1BcjeSFxT1H5fAOmp9ibT1ilTkxvPqCtQWGeotbLU2r2kFZHlsnwPSTaBJcOhG/yzd7iOHj30sHD8XXwzLKmQyxrH9hA0g5fMXw2UEYQjI2iu55en/LgV+3YVnsVPLy+ujqV+J1LkQYesBtjtLmEJkM6pOA4MhSfzvBF6mRwylX52zaMnGHlqaHaL1SPDGtarw7161jZJfwX3ThIIeY2e41Jt9gTPAv8a0TOi4ZksCWd/hN3KK4GupXrEeWQ3ia758P4qUnfl8A6kXfL5d2Jwab6OL93ut0bYaTjLJ1Fcbsd4qp5qOPBdoirI77XcaB76FmLZnAL77u14A3WNto5V9hZHPNCTLxCMbkZO1yPyHnjxg6SndJSZ1jxSSK1TyeQ+gn38f5NRJMLobwRrgwW54X4Gcq5J1efVv3jB6JYQ5q+0GEwhY/doN0BT0Pft1P4jzEqjUmgDoNmq5tp1SRxvri9eWA3ibalRSay+d2CIvV5znFc4/ndgja2AWQE7AH3vOPd1j7WLSR3NO0mbdfwJHRN68ejEpQ9jIeuDreYKrwMKWBjtuwyxpa9jMXBPJoaphpU1qW6y6ZQKV44TBnzUCiMMgCFhp5O3kym9KnQ1uVc9Rz6lxMpOrrLVYeJ8P+17uJrXUtZB59djHwRYU6FCldtmz61dy1K/Kx37ep1Kp2c2U1ts2L37LDgZK2qNtzCo5F1TZ+bewg1XCos30gaWlsuLbxS5u/u2/n2PTsXwl9Q9u5Xey49yYTh/Q1wupvVAWdFL0YQ0NcPrpszquxjds60Nfrqob6Oelz/sBPb2UcJaKTmePErXE//ZIVT5l7WxdubJU7JvwGLp87X
+sidebar_class_name: "get api-method"
+info_path: api/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Historical Intersection Cycle Times"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/intersections/{intersection_id}/cycle-times"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This resource allows you to view the estimated cycle time time series of a single Intersection in a particular region.
+
+Use `since` and `until` parameters to control the time range.
+You can select time range of maximum 30 days.
+
+You must set `since` and `until` to be a time in the past or present.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"intersection_id","in":"path","required":true,"schema":{"type":"string","title":"Intersection Id"}},{"name":"since","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Since"}},{"name":"until","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Until"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"time":{"type":"string","format":"date-time","title":"Time"},"intersection_id":{"type":"string","title":"Intersection Id"},"cycle_time":{"type":"number","title":"Cycle Time"}},"type":"object","required":["time","intersection_id","cycle_time"],"title":"CycleTimeRecord"},"title":"Response Get Historical Intersection Cycle Times Regions  Region  Intersections  Intersection Id  Cycle Times Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

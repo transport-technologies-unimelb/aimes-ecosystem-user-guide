@@ -120,14 +120,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-link-hazards-regions-region-hazards-get",
-          label: "Get Region Link Hazards",
+          id: "api/get-all-link-hazards-regions-region-hazards-get",
+          label: "Get All Link Hazards",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-link-hazards-regions-region-links-link-id-hazards-get",
-          label: "Get Link Hazards",
+          id: "api/get-historical-link-hazards-regions-region-links-link-id-hazards-get",
+          label: "Get Historical Link Hazards",
           className: "api-method get",
         },
       ],
@@ -138,14 +138,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-link-emissions-regions-region-link-emissions-get",
-          label: "Get Region Link Emissions",
+          id: "api/get-all-link-emissions-regions-region-link-emissions-get",
+          label: "Get All Link Emissions",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-link-emissions-regions-region-links-link-id-link-emissions-get",
-          label: "Get Link Emissions",
+          id: "api/get-historical-link-emissions-regions-region-links-link-id-link-emissions-get",
+          label: "Get Historical Link Emissions",
           className: "api-method get",
         },
       ],
@@ -156,14 +156,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-link-queue-lengths-regions-region-queue-lengths-get",
-          label: "Get Region Link Queue Lengths",
+          id: "api/get-all-link-queue-lengths-regions-region-queue-lengths-get",
+          label: "Get All Link Queue Lengths",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-link-queue-lengths-regions-region-links-link-id-queue-lengths-get",
-          label: "Get Link Queue Lengths",
+          id: "api/get-historical-link-queue-lengths-regions-region-links-link-id-queue-lengths-get",
+          label: "Get Historical Link Queue Lengths",
           className: "api-method get",
         },
       ],
@@ -174,14 +174,14 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "api/get-region-intersection-cycle-times-regions-region-cycle-times-get",
-          label: "Get Region Intersection Cycle Times",
+          id: "api/get-all-intersection-cycle-times-regions-region-cycle-times-get",
+          label: "Get All Intersection Cycle Times",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "api/get-intersection-cycle-times-regions-region-intersections-intersection-id-cycle-times-get",
-          label: "Get Intersection Cycle Times",
+          id: "api/get-historical-intersection-cycle-times-regions-region-intersections-intersection-id-cycle-times-get",
+          label: "Get Historical Intersection Cycle Times",
           className: "api-method get",
         },
       ],

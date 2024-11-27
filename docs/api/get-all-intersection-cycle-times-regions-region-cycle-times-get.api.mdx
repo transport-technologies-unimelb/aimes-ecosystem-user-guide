@@ -1,0 +1,73 @@
+---
+id: get-all-intersection-cycle-times-regions-region-cycle-times-get
+title: "Get All Intersection Cycle Times"
+description: "This method allows you to get the estimated cycle time of all Intersections in a region **at a particular time**."
+sidebar_label: "Get All Intersection Cycle Times"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v4zYQ/SuETt0glrxBTr4ZbbA12rRB4i1aZA0vLY0lbiVSyw+3gqD/3hlSiqR4k8UWvfRkipwvvvdm6DayPDfR6jH6vklLYFtRQbS7jDIwqRa1FUpGq2hbCMMqsIXKGC9L9ZdhjXLMKpaDZbYABsaKilvIWOrj4BcwdSRrtpEWtIGUghkmJONMQ44f7OKCW/yqubYidSXX3u/iIv4gP8g/MIMEjIhpDKb5SGcf6Qs9NBiQlimNzsZ6tzi6jFQNmlOeTYZlY3F7LGAvJgXsfX17cjD7UIbZ94v97BC9MSLWxvHm6I8gtZHED4wc7PFYEDw1twWuNXx2QgNmttrBZWTSAioerdrINjV5GauFzNHSClvSxn0I03WXT5Ep9xD3swPdfFPgo9LIAu5kyMWijzVk89x23Y4CmhrvDYZiXC2X9DNn/MGlKRhzdCW7740xUqoQSWnJnNd1KVKPdfLJkE97XhfXmtMFhIXK56o1MWRFyOzr+3e3IIQmpIrsNZinAmSoDPQeiZ44SlcdQE8cJz2BHA1m6vAJY814eRx5m1c1y7R7FpkC30OqtC9pFEXAm71D0a+f9Q8bSzIsyMewfsFmh+iNRVPZ18vrc4J/UZYdlZM+9fXV1bnFb7wUmSeY3Wit9LfwP+c5A8tFSasXhFCqdHbKZfPr0ffbnFLqk36HgM6RrG43EjPIbUDyZxUKpCtWJn9NIrcodp57YQWTl009GGxLp18TBd0rpO7tJgoY4Q3ovnyNHwJ8X0o2mPy43d6dBQzsh7EdpqGfZzirVlHSj76kDYsu8Tr1zWbQzIA+DTPPaeQuKqytzSpJeC1iJ9GsPCys5hLFqu3CQlpIVaocGY3TUrkshszF3CWntxGNHNSv08I2PuK6Fj9Bs3ZUyuNuevxAEgqimBqNE8VvDgOyAJ75hu2H5+8LdFqQQecnxFGFMRNAWm9ubx7YTapMY1BpbH23oZu6quI4ZvH8bkOviwZkHE7AEExOzxW9b89965JbGlNx3xU89V3R1/FeCkIP70Nv4C1CpZyWwBZsOyDGthPEEh8eQ82hBpkPUA9oCpk5VGSTcE8U3tIn8g27jN/GS9qqlbEVl5OCvjZKomcvfju2+v/n8e8lYuFvmyA/wve9R7TtZf/YP9x039XTGz5VPkqxQPTItG0P3MB7XXYdbYfHmNSbCcMPJXX4kZcGXoHuu/t+GLxhL9X3JzTjq3/ipSMT3zEnrgXl+e9zDr0km2nOoZYeFz9Y+wajCsLhGv8W1HbidvYOUOlPM+fdzRZb8R8mxZRH
+sidebar_class_name: "get api-method"
+info_path: api/aimes-ecosystem-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get All Intersection Cycle Times"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/regions/{region}/cycle-times"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+This method allows you to get the estimated cycle time of all Intersections in a region **at a particular time**.
+
+You need to set `time` to a present or past time.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"region","in":"path","required":true,"schema":{"type":"string","title":"Region"}},{"name":"time","in":"query","required":true,"schema":{"type":"string","format":"date-time","title":"Time"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"time":{"type":"string","format":"date-time","title":"Time"},"intersection_id":{"type":"string","title":"Intersection Id"},"cycle_time":{"type":"number","title":"Cycle Time"}},"type":"object","required":["time","intersection_id","cycle_time"],"title":"CycleTimeRecord"},"title":"Response Get All Intersection Cycle Times Regions  Region  Cycle Times Get"}}}},"404":{"description":"Not found"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
