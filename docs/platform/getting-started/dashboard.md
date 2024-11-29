@@ -13,7 +13,7 @@ Here's what you will see when first opening the dashboard.
 #### Navbar
 
 You can use the top navbar to navigate to different main features of the platform.
-1. Map - Allows you to visualise and interact with the map. See [Map View](../category/map-view).
+1. Map - Allows you to visualise and interact with the map. See [Map View](/category/map-view).
 2. Metrics - Allows you to plot a time series plot of certain metrics of the entire road network.
 3. Query - Allows you to build custom query and export the data as CSV.
 
@@ -29,7 +29,7 @@ You can choose one of the following options:
 
 #### Sidebar
 
-Use the Sidebar to navigate across different functionalities of the [Map View](../category/map-view).
+Use the Sidebar to navigate across different functionalities of the [Map View](/category/map-view).
 
 #### Address Search Bar
 

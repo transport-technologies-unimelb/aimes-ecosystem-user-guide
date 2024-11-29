@@ -50,7 +50,7 @@ Some details pane will overlay a visualisation on the main map. For instance, th
 ## Layers
 
 Layers are extra visualisations that are drawn on the map. There are several layers, which you can independently add to or remove from the map.
-More on Layers [here](../category/layers/).
+More on Layers [here](/category/layers/).
 
 ### Adding or removing layers
 
