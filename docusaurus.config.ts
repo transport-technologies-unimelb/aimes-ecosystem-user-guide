@@ -59,7 +59,7 @@ const config: Config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           api: {
-            specPath: "src/openapi.json",
+            specPath: "https://api.unimelb-transport-technologies.cloud.edu.au/v1/openapi.json",
             outputDir: "docs/api",
             sidebarOptions: {
               groupPathsBy: "tag",
